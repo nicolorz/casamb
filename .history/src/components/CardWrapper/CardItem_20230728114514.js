@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { colorCodes } from '../../statics/statics'
 import './CardItem.css'
 
@@ -11,4 +13,8 @@ export const CardItem = ({card}) => {
             <img src={card.source} alt={card.info} />
         </div>
     )
+}
+
+CardItem.propType = {
+    card: PropTypes.object.isRequired
 }
