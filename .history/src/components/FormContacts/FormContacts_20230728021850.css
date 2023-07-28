@@ -1,0 +1,39 @@
+/* .form {
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+} */
+
+
+.form label {
+    display: block;
+    margin: 16px 0 4px 0;
+}
+
+input, textarea {
+    width: 100%;
+    display: block;
+    appearance: none;
+    padding: 0.5em;
+    border: 1px solid #8a8a8a;
+    border-radius: 4px;
+    background-color: #fff;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #105689;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    outline: 0.5px solid #105689;
+}
+
+.form input:not(input[type="submit"]), .form textarea {
+    width: 100%;
+    box-sizing: border-box;
+}

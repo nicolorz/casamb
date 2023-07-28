@@ -1,0 +1,28 @@
+
+
+.form {
+    width: 300px;
+    padding: 1rem;
+    background-color: #94BFFF;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.form-generated {
+    background-color: lightgreen;
+}
+
+
+.form label {
+    display: block;
+    margin: 16px 0 4px 0;
+    font-size: 12px;
+}
+
+.form input:not(input[type="submit"]), .form textarea {
+    width: 100%;
+    box-sizing: border-box;
+}

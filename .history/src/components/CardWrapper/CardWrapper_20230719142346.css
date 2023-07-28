@@ -1,0 +1,13 @@
+.card-wrapper {
+    width: 100%;
+    margin-top: 250px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+.card-item {
+    width: 100%;
+    height: 200px;
+    background-color: #dedede;
+}

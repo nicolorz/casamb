@@ -1,0 +1,10 @@
+.sorting-btn {
+    background-color: #62A1FF;
+    padding: 20px 12px;
+    border: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

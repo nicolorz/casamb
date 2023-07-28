@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+.main-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.card-wrapper {
+  flex: 4;
+  font-family: 'Lato', sans-serif;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.header, .footer, .area-buttons {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: #EFF8FF;
+  border: 1px solid #62A1FF; 
+}
+
+.header, .foooter {
+  flex: 0 1 auto;
+}
+
+.area-buttons {
+  flex: 1 0 auto;
+}

@@ -1,0 +1,20 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: yellow;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+.card-wrapper {
+  flex: 4;
+}
