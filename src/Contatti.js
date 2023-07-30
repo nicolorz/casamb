@@ -16,16 +16,15 @@ function Contatti() {
             <div id="header" className="header" style={{position: 'relative', padding: 0}}>
                 <HeaderTop />
             </div>
-            <div className="contact-page-wrapper">
+            <div className="contact-page-wrapper contact-container">
                 <MapContacts />
                 <FormContacts />
             </div>
-            <div className="footer">
-                <div className="contatti">Mirko Francesco Bova<br/>Tel. 3470681629<br/>info@casamb.it</div>
+            <div className="contact-footer contact-container" style={{marginTop: 'auto', paddingBottom: '4rem'}}>
                 <div className="indirizzo" style={{textAlign: 'right'}}>Via Aristotele 39<br/>20128, Milano</div>
+                <div className="contatti">Mirko Francesco Bova<br/>Tel. 3470681629<br/>info@casamb.it</div>
             </div>
         </div>
-
     )
 }
 
