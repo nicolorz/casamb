@@ -2,6 +2,7 @@ import './CardWrapper.css'
 import { CardItem } from './CardItem';
 import { useState, useEffect } from 'react';
 import { images } from "../../statics/statics";
+import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 
 export const CardWrapper = ({clickedButtons}) => {
 
@@ -33,20 +34,26 @@ export const CardWrapper = ({clickedButtons}) => {
         handler();
 
         return () => {
-            window.removeEventListener('resize', handler);
+            window.removeEventListener('resize', handler)
         }
     }, [])
-    
+
     return (
-        <div className="card-wrapper" style={{marginTop: headerHeight}}>
+        <div style={{marginTop: headerHeight}}>
+            <ResponsiveMasonry
+                columnsCountBreakPoints={{350: 1, 768: 2, 992: 3, 1200: 4, 1400: 5}}
+            >
+                <Masonry gutter="1rem">
             {visibleImages.map((img) => {
                 return (
-                    <CardItem 
-                    key={img.source} 
+                    <CardItem
+                    key={img.source}
                     card={img}
                  />
                 )
             })}
+                </Masonry>
+            </ResponsiveMasonry>
         </div>
     )
 };

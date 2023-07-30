@@ -1,6 +1,64 @@
+.contact-page-wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-wrapper{
+    width: 100%;
+}
+
+#map {
+    width: 100%;
+    height: 540px;
+    margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 576px) {
+    .contact-page-wrapper{
+        width: 540px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .contact-page-wrapper{
+        width: 720px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .contact-page-wrapper{
+        width: 960px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #map{
+        height: 440px;
+        margin-left: 4rem;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .contact-page-wrapper{
+        width: 1140px;
+    }
+
+    #map{
+        height: 540px;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .contact-page-wrapper{
+        width: 1320px;
+    }
+    #map{
+        height: 630px;
+    }
+}
+
 label {
     display: block;
-    
 }
 
 label:not(:first-child) {
@@ -37,8 +95,8 @@ input:focus, textarea:focus {
 }
 
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px white inset !important;
     box-shadow: 0 0 0 30px white inset !important;
