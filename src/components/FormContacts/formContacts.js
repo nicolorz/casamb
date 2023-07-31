@@ -4,15 +4,24 @@ export const FormContacts = () => {
 
     const [subject, setSubject] = useState("");
     const [body, setBody] = useState("")
+    const [formData, setFormdata] = useState({
+        name: "",
+        surname: "",
+        subject: "",
+        body: ""
+    })
 
-
+    const handleSumbit = (e) => {
+        e.preventDefault()
+        console.log('e', e)
+    }
 
     return (
         <div id="form-wrapper" className="form-wrapper">
-            <form action={`mailto:sanvi.simo@gmail.com?subject=${subject}&body=${body}`} method="post" encType="text/plain" className="form">
+            <form action={`mailto:sanvi.simo@gmail.com?subject=${subject}&body=${body}`} method="post" encType="text/plain" className="form" onSubmit={handleSumbit}>
 
                 <label htmlFor="name">Nome *</label>
-                <input id="name" type="text" name="nome" />
+                <input id="name" type="text" name="nome" onChange={(e) => setFormdata({...formData, name: e.target.value})} />
 
                 <label htmlFor="surname">Cognome *</label>
                 <input id="surname" type="text" name="cognome" />
