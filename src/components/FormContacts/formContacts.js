@@ -9,7 +9,7 @@ export const FormContacts = () => {
 
     return (
         <div id="form-wrapper" className="form-wrapper">
-            <form action={`mailto:sanvi.simo@gmail.com?subject=${subject}&body=${body}`} method="post" encType="text/plain" className="form">
+            <form action={`mailto:info@casamb.it?subject=${subject}&body=${body}`} method="post" encType="text/plain" className="form">
 
                 <label htmlFor="name">Nome *</label>
                 <input id="name" type="text" name="nome" />
