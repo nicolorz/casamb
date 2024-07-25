@@ -22,7 +22,13 @@ function Contatti() {
             </div>
             <div className="contact-footer contact-container" style={{marginTop: 'auto', paddingBottom: '4rem'}}>
                 <div className="indirizzo" style={{textAlign: 'right'}}>Via Aristotele 39<br/>20128, Milano</div>
-                <div className="contatti">Mirko Francesco Bova<br/>Tel. 3470681629<br/>info@casamb.it</div>
+                <div className="contatti">
+                  0Mirko Francesco Bova
+                  <br />
+                  Tel. <a href="tel:+393756171145">375 617 1145</a>
+                  <br />
+                  <a href="mailto:info@casamb.it">info@casamb.it</a>
+                </div>
             </div>
         </div>
     )
