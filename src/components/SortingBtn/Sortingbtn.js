@@ -19,17 +19,8 @@ export const SortingBtn = ({ button }) => {
       return;
     }
 
-    if (categories.length === sortingButtons.length) {
-      setCategories([button.tag]);
-      return;
-    }
-
-    setCategories(() => {
-      return active
-        ? categories.filter((el) => el !== button.tag)
-        : [...categories, button.tag];
-    });
-  }, [categories, active, button]);
+    setCategories([button.tag]);
+  }, [categories, button]);
 
   return (
     <button
